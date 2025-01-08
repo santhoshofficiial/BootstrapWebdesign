@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Bootstrap </title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./asset/style/style.css">
+</head>
+
+<body>
+
+  <nav id="home-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+
+        <a class="navbar-brand" href="#"> GREEN </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#home-nav">Home</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#about-nav">About</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#service-nav">Services</a>
+            </li>
+       
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#team-nav">Team</a>
+            </li>
+    
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#contact-nav">Contact</a>
+            </li>
+    
+            <li class="nav-item px-2" id="home-nav">
+              <a class="btn btn-get-started ms-lg-3" href="#home-nav"> Get Started </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <section class="scroll-ft">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel data-bs-interval="false">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="position-relative" style="height: 400px; background-image: url('./asset/images/green-two.jpg'); background-size: cover; background-position: center">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-white text-center carousel-inner-container">
+              <h2 class="carousel-heading"> Welcome to Green </h2>
+              <p class="carousel-para pt-3">Discover amazing features to boost your productivity. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam explicabo rem voluptatum. </p>
+              <button class="carousel-btn mt-3">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="position-relative" style="height: 400px; background-image: url('./asset/images/green-two.jpg'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-white text-center">
+              <h2 class="carousel-heading">Our Services</h2>
+              <p class="carousel-para pt-3">"We craft stunning, responsive websites tailored to meet your business needs. From design to deployment, we ensure a seamless user experience."</p>
+              <button class="carousel-btn mt-3"> View Services </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="position-relative" style="height: 400px; background-image: url('./asset/images/green-two.jpg'); background-size: cover; background-position: center;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle text-white text-center">
+              <h2 class="carousel-heading">Contact Us</h2>
+              <p class="carousel-para pt-3">We are here to help. Reach out to us anytime! Whether you have a question, feedback, or just want to chat, feel free to reach out. Our team is here to help you"</p>
+              <button class="carousel-btn mt-3"> Get in Touch </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="scroll-info-container">
+    <div class="container scroll-padding">
+      <div class="row ">
+        <div class="col-lg-4 col-md-6">
+          <img src="./asset/images/laptop-icon1.png" alt="Icon 1">
+          <h4> Lorem Ipsum </h4>
+          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum a ratione quo amet quis odio autem aperiam voluptatibus accusantium doloremque. </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img src="./asset/images/mail-icon1.png" alt="Icon-2">
+          <h4> Dolor Sitema </h4>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat qui facilis voluptatibus quis obcaecati reprehenderit exercitationem. </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <img src="./asset/images/calendar-icon1.png" alt="Icon-3">
+          <h4> Sed ut percndi </h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat quam ipsam, saepe natus assumenda! </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us-wrapper">
+
+    <div class="container" id="about-nav">
+
+      <div class="aboutus-title">
+        <h2>
+           About Us
+         </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illum debitis molestiae neque iusto sapiente libero nulla adipisci deserunt qui nam recusandae, facere rem ullam? Mollitia possimus accusantium recusandae alias?
+        </p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="https://webwork123.netlify.app/assets/img/about.jpg" class="img-fluid" alt="about-image">
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <h3> Voluptatem dignissimos provident quasi corporis voluptates sit assumenda. </h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatum autem illo non, ipsum nihil deleniti nulla eos aliquid voluptas. </p>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, obcaecati. </p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laborum? </p>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aperiam impedit alias numquam, neque sunt adipisci fuga esse aliquid! Ratione expedita ipsum aperiam debitis est? </p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, reprehenderit earum. Laboriosam ipsam consectetur qui saepe asperiores non aperiam deleniti atque, blanditiis suscipit iure? Deserunt eos consequatur iste odit incidunt eum quis et vel, magni quaerat laborum minus suscipit voluptas. </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="ft-points-wrapper">
+    <div class="container">
+      <div class="row no-gutters pt-2">
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 01 </p>
+          <p> Lorem epsum </p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quae quo qui culpa distinctio doloribus eaque, sunt tenetur minima repellendus. </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 02 </p>
+          <p> Repellat Nihil </p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quae quo qui culpa distinctio doloribus eaque, sunt tenetur minima repellendus. </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 03 </p>
+          <p> Ad ad velit qui </p>
+          <p> Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 04 </p>
+          <p> Ad ad velit qui </p>
+          <p> Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 05 </p>
+          <p> Repellendus molestiae </p>
+          <p> Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 content-items p-3">
+          <p class="n-style"> 06 </p>
+          <p> Sapiente Magnam </p>
+          <p> Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam Aut doloribus vitae sunt debitis quo vel nam quis  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-wrapper mt-5">
+
+    <div class="container" id="service-nav">
+      <div class="service-header">
+        <h3 class="head-same-style"> Services </h3>
+        <p class="text-center"> Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+      </div>
+    
+      <div class="service-content-container row mt-4">
+
+        <div class="ser-one col-lg-4 col-md-6 mt-3">
+          <div class="image-clients-box text-center">
+              <div class="image-client py-2">
+                <img src="./asset/images/client-1.svg" alt="image" height="40px" width="40px">
+              </div>
+            <h4 class="py-2"> Lorem Ipsum </h4>
+            <p> Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi </p>
+          </div>
+        </div>
+
+        <div class="ser-two col-lg-4 col-md-6 mt-3">
+          <div class="image-clients-box text-center">
+            <div class="image-client py-2">
+              <img src="./asset/images/client-2.svg" alt="image" height="40px" width="40px">
+            </div>
+            <h4 class="py-2"> Sed Perspiciatis </h4>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
+          </div>
+        </div>
+
+        <div class="ser-three col-lg-4 col-md-6 mt-3">
+          <div class="image-clients-box text-center">
+            <div class="image-client py-2">
+              <img src="./asset/images/client-3.svg" alt="image" height="40px" width="40px">
+            </div>
+            <h4 class="py-2"> Magni Dolores </h4>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
+          </div>
+        </div>
+
+        <div class="ser-four col-lg-4 col-md-6 mt-4">
+          <div class="image-clients-box text-center">
+            <div class="image-client py-2">
+              <img src="./asset/images/client-4.png" alt="image" height="40px" width="40px">
+            </div>
+            <h4 class="py-2"> Nemo Enim </h4>
+            <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+          </div>
+        </div>
+
+        <div class="ser-five col-lg-4 col-md-6 mt-4">
+          <div class="image-clients-box text-center">
+            <div class="image-client py-2">
+              <img src="./asset/images/client-5.png" alt="image" height="40px" width="40px">
+            </div>
+            <h4 class="py-2"> Dele Cardo </h4>
+            <p> Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur </p>
+          </div>
+        </div>
+
+        <div class="ser-six col-lg-4 col-md-6 mt-4">
+          <div class="image-clients-box text-center">
+            <div class="image-client py-2">
+              <img src="./asset/images/client-6.png" alt="image" height="40px" width="40px">
+            </div>
+            <h4 class="py-2"> Divera Don </h4>
+            <p> Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="callaction-wrapper mt-5">
+    <div class="container callaction-container pb-5">
+      <div class="row d-flex align-items-center text-center text-lg-start pt-5">
+        <div class="col-lg-9 col-12 call-content">
+          <h3> Call To Action </h3>
+          <p> 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+          </p>
+        </div>
+  
+        <div class="col-lg-3 col-12 mt-3 mt-lg-0 call-btn-container">
+          <button class="call-btn"> Call To Action </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-wrapper mt-5">
+
+    <div class="container" id="team-nav">
+
+      <div class="team-text row"> 
+        <h3> Team </h3>
+        <p> Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+      </div>
+
+      <div class="team-card-container row mt-4">
+
+        <div class="team-card-one col-lg-4 col-md-6 text-center">
+          <div class="team-member">
+            <img src="./asset/images/men-one.png" alt="team-card-pic1" height="200px" width="200px">
+            <h4> Walter White </h4>
+            <p class="head-below"> Chief Executive Officer </p>
+            <p class="team-para"> Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut </p>
+              <div class="team-icons-container">
+                <img src="./asset/images/twitter-logo.png" alt="twitter-logo" height="30px" width="30px">
+                <img src="./asset/images/instagram-logo.png" alt="instagram-logo" height="30px" width="30px">
+                <img src="./asset/images/linkedin logo.png" alt="linkedin-logo" height="30px" width="30px">
+                <img src="./asset/images/facebooks-logo.png" alt="facebook-logo" height="30px" width="30px">
+              </div>
+          </div>
+        </div>
+
+        <div class="team-card-one col-lg-4 col-md-6 text-center">
+
+          <div class="team-member">
+            <img src="./asset/images/women-one.jpg" alt="team-card-pic1" height="200px" width="200px">
+            <h4> Sarah Jhinson </h4>
+            <p class="head-below"> Product Manager </p>
+            <p class="team-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quia nostrum ex sit natus veniam illum nam. </p>
+              <div class="team-icons-container">
+                <img src="./asset/images/twitter-logo.png" alt="twitter-logo" height="30px" width="30px">
+                <img src="./asset/images/instagram-logo.png" alt="instagram-logo" height="30px" width="30px">
+                <img src="./asset/images/linkedin logo.png" alt="linkedin-logo" height="30px" width="30px">
+                <img src="./asset/images/facebooks-logo.png" alt="facebook-logo" height="30px" width="30px">
+              </div>
+          </div>
+            
+        </div>
+
+        <div class="team-card-one col-lg-4 col-md-6 text-center">
+
+          <div class="team-member">
+            <img src="./asset/images/men-three.jpg" alt="team-card-pic2" height="200px" width="200px">
+            <h4> William Anderson</h4>
+            <p class="head-below"> CTO </p>
+            <p class="team-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nostrum nihil! Amet placeat quaerat expedita! </p>
+              <div class="team-icons-container">
+                <img src="./asset/images/twitter-logo.png" alt="twitter-logo" height="30px" width="30px">
+                <img src="./asset/images/instagram-logo.png" alt="instagram-logo" height="30px" width="30px">
+                <img src="./asset/images/linkedin logo.png" alt="linkedin-logo" height="30px" width="30px">
+                <img src="./asset/images/facebooks-logo.png" alt="facebook-logo" height="30px" width="30px">
+              </div>
+          </div>
+
+        </div>
+          
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact-section">
+
+    <div class="container pt-5" id="contact-nav">
+
+      <div class="contact-heading row">
+        <h3> Contact </h3>
+        <p> Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+      </div>
+
+      <div class="contact-form row">
+
+        <form class="mt-3">
+          <div class="contact-line">
+
+          </div>
+
+          <div class="row pt-4">
+            <div class="col-lg-6 col-md-12 d-flex flex-column">
+              <label for="name"> Your Name :</label>
+              <input class="inp-style" id="name" type="text" name="name">
+            </div>
+
+            <div class="col-lg-6 col-md-12 d-flex flex-column">
+              <label for="mail"> Your Mail :</label>
+              <input class="inp-style" id="mail" type="mail" name="mail">
+            </div>
+          </div>
+
+          <div class="d-flex flex-column pt-4">
+            <label for="subject"> Subject :</label>
+            <input class="inp-style" id="subject" type="text" name="subject">
+           </div>
+
+          <div class="d-flex flex-column pt-4">
+            <label for="msg"> Message :</label>
+            <textarea class="inp-style" name="message" rows="10" required=""> </textarea>
+
+          </div>
+
+          <div class="send-button text-center pt-4 pb-4">
+            <button> Send Message </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>  
+
+  <footer class="mt-3">
+
+    <div class="container text-center footer-container" id="foot-nav">
+
+      <h2 > Green </h2>
+      <p class="pt-3" style="font-style: italic;"> Please note that this A sample website created to demonstrate proficiency in Bootstrap and CSS for responsive web design. </p>
+      <div class="icon-container pt-2">
+        <img src="./asset/images/twitter-logo.png" alt="twitter-logo" height="30px" width="30px">
+        <img src="./asset/images/instagram-logo.png" alt="instagram-logo" height="30px" width="30px">
+        <img src="./asset/images/linkedin logo.png" alt="linkedin-logo" height="30px" width="30px">
+        <img src="./asset/images/facebooks-logo.png" alt="facebook-logo" height="30px" width="30px">
+      </div>
+      <p class="pt-4"> © Copyright <span style="font-weight: bold;"> Green </span> All Rights Reserved </p>
+      <p> Designed using <span> Bootstrap </span> </p>
+
+    </div>
+
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
